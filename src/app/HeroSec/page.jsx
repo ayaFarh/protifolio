@@ -40,7 +40,7 @@ export default function HeroSec() {
      </motion.div>
      {/* image */}
      <motion.div variants={fadeIn(0.3)} initial="hidden" animate="show" exit="exit">
-      <Image src="/3d-illustration-girl-with-glasses-laptop-her-hands-2.png" width={500} height={500} alt="aya" />
+      <Image src="/3d-illustration-girl-with-glasses-laptop-her-hands-2.webp" width={500} height={500} alt="aya" />
      </motion.div>
     </div>
     </div>
