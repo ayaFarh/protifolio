@@ -24,7 +24,7 @@ export default function PhoneMenu({setPhoneNav}) {
         {
             navList.map((item,index)=>
                     <li key={index} className="after:content-[''] after:w-0 hover:after:w-full after:h-[2px] after:bg-newGray after:block after:transition-all after:duration-500 ">
-                        <Link href={item.link} >{item.name}</Link>
+                        <Link href={item.link} onClick={()=> setPhoneNav(false)}>{item.name}</Link>
                     </li>
             )
         }

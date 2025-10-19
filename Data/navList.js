@@ -13,7 +13,7 @@
         },
         {
             name:"Skills",
-            link:"/skills"
+            link:"/Skills"
         },
         {
             name:"Projects",
