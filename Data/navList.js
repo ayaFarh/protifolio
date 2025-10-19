@@ -1,0 +1,22 @@
+ export const navList= [
+        {
+            name:"Home",
+            link:"/"
+        },
+        {
+            name:"About",
+            link:"/about"
+        },
+        {
+            name:"Contact",
+            link:"/contact"
+        },
+        {
+            name:"Skills",
+            link:"/skills"
+        },
+        {
+            name:"Projects",
+            link:"/projects"
+        }
+    ]

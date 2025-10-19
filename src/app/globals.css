@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -7,7 +8,30 @@
 
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: black;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+@theme {
+  --color-primary: #481709;
+  --color-primary-foreground: #ff6100;
+  --color-secondary: #eb3cab;
+  --color-secondary-foreground: #c149e6;
+  --color-accent: #009061;
+  --color-accent-foreground:#019b4a;
+  --color-success: #2486fe;
+  --color-newGray:#8d9094;
+  
+}
+.mainContainer{
+  width:80%;
+  margin: 0 auto;
+}
+
+@layer components {
+  .btn {
+    @apply hover:bg-primary text-white py-2 px-6 rounded-lg 
+              w-fit text-center border border-primary-foreground hover:border-primary transition-all duration-300 ease-in-out;
+  }
 }
