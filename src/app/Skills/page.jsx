@@ -32,6 +32,9 @@ export default function Skills() {
                     
                 },
                 {
+                    name:"Bootstrap",
+                },
+                {
                     name:"JavaScript",
                     
                 },
@@ -128,15 +131,15 @@ export default function Skills() {
     <div className='bg-[#05080e] py-5'>
       <div className='w-[70%] mx-auto space-y-4   '>
    <div className='flex flex-col space-y-3 items-center justify-center'>
-     <h2 className='text-3xl text-center font-bold'>Skills & Expertise</h2>
-    <p className='text-newGray text-center'>A comprehensive toolkit for creating data-driven, responsive web applications</p>
+     <h2 className='text-3xl max-[377px]:text-xl text-center font-bold'>Skills & Expertise</h2>
+    <p className='text-newGray max-[377px]:text-sm text-center'>A comprehensive toolkit for creating data-driven, responsive web applications</p>
    </div>
 {/* main content */}
     <div>
      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full' >
     {
         listOfSkills.map((item,index)=>
-       <div key={index} style={{ backgroundColor:item.colors.secondColor,borderColor:item.colors.firstColor}} className='relative p-4 border-2 space-y-2 rounded-xl'>
+       <div key={index} style={{ backgroundColor:item.colors.secondColor,borderColor:item.colors.firstColor}} className='relative hover:scale-105 transition-all duration-300 p-4 border-2 space-y-2 rounded-xl'>
         <div className='absolute top-0 right-0 w-9 h-8  rounded-tr-lg rounded-bl-lg' style={{backgroundColor:item.colors.firstColor}}></div>
         <p className='w-fit p-3 rounded-xl' style={{ backgroundColor: item.colors.thirdColor,
       color: "#fff",

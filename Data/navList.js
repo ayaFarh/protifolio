@@ -5,11 +5,11 @@
         },
         {
             name:"About",
-            link:"/about"
+            link:"/About"
         },
         {
             name:"Contact",
-            link:"/contact"
+            link:"/Contact"
         },
         {
             name:"Skills",
@@ -17,6 +17,6 @@
         },
         {
             name:"Projects",
-            link:"/projects"
+            link:"/Projects"
         }
     ]
