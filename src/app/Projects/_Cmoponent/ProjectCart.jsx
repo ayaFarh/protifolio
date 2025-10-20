@@ -9,7 +9,7 @@ export default function ProjectCart({product,index}) {
   const colors = colorPlate[index % colorPlate.length]
 
   return (
-    <div className='relative p-4 rounded-lg space-y-3 group' style={{backgroundColor:colors.secondColor}}>
+    <div className='relative p-4 rounded-lg space-y-3 group hover:scale-105 transition-all duration-300 ease-in-out' style={{backgroundColor:colors.secondColor}}>
       <div className='bg-black/40 h-49 w-full absolute top-0 left-0 bottom-0 right-0 z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out'>
           <div className='flex w-full items-center h-full justify-center '>
            {product.link &&  <Link href={product.link ||""}  className='p-3 rounded-full  flex items-center justify-center bg-newGray/80'>
