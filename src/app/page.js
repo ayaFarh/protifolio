@@ -3,6 +3,7 @@ import HeroSec from "./HeroSec/page";
 import Skills from "./Skills/page";
 import About from "./About/page";
 import Interested from "./_Component/Interested";
+import Contact from "./Contact/page";
 
 
 export default function Home() {
@@ -10,8 +11,10 @@ export default function Home() {
    <div className="space-y-4">
    <HeroSec/>
    <About/>
-   <Skills/>
    <Interested/>
+   <Skills/>
+   
+   <Contact/>
    
    </div>
   );
