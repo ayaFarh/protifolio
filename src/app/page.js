@@ -4,6 +4,7 @@ import Skills from "./Skills/page";
 import About from "./About/page";
 import Interested from "./_Component/Interested";
 import Contact from "./Contact/page";
+import Projects from "./Projects/page";
 
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
    <About/>
    <Interested/>
    <Skills/>
-   
+   <Projects/>
    <Contact/>
    
    </div>
