@@ -2,6 +2,7 @@ import Image from "next/image";
 import HeroSec from "./HeroSec/page";
 import Skills from "./Skills/page";
 import About from "./About/page";
+import Interested from "./_Component/Interested";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
    <HeroSec/>
    <About/>
    <Skills/>
+   <Interested/>
    
    </div>
   );

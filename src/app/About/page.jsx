@@ -40,7 +40,7 @@ colors:{
                 {list.map((item,index)=>
                     <div key={index} className='p-4 rounded-xl space-y-2' style={{background: `linear-gradient(180deg, ${item.colors.firstColor}, ${item.colors.secondColor})`}}>
                         <div className='flex gap-2 items-center'><div className='w-3  h-3 transform rotate-45 ' style={{backgroundColor:item.colors.thirdColor}} > </div>
-                        <h2 style={{color:item.colors.thirdColor}} className='text-2xl'>{item.name}</h2></div>
+                        <h2 style={{color:item.colors.thirdColor}} className='text-2xl max-[375px]:text-xl  max-[337px]:text-lg '>{item.name}</h2></div>
                         <p>{item.details}</p>
                     </div>
                 )}

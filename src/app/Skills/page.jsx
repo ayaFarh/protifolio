@@ -146,7 +146,7 @@ export default function Skills() {
       fontSize: "24px",
       textAlign: "center",
     }}>{item.icon}</p>
-        <h2 style={{color:item.colors.thirdColor}}>{item.name}</h2>
+        <h2 style={{color:item.colors.thirdColor}} className=''>{item.name}</h2>
         <div>
             {
                 item.details.map((detail,index)=>
