@@ -4,7 +4,7 @@ import React from 'react'
 export default function Interested() {
   return (
     <div className='py-5'>
-        <div className='mainContainer text-center space-y-4 p-4 border border-[#344454] rounded-xl bg-linear-to-b  from-[#0e041a] to-[#010103] '>
+        <div className='mainContainer text-center space-y-4 p-4 border border-[#344454] rounded-xl bg-gradient-to-t  from-[#0e041a] to-[#010103] '>
             <p className='text-3xl max-[590px]:text-2xl max-[498px]:text-xl max-[428px]:text-lg max-[385px]:text-sm'>Interested in Working Together?</p>
         <p className='text-newGray max-[385px]:text-sm'>I'm always excited to take on new challenges and create innovative solutions. Let's discuss how I can help bring your project to life!</p>
         <div className='w-full flex flex-row max-[528px]:flex-col items-center justify-center gap-3'>

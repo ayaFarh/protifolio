@@ -1,4 +1,8 @@
+"use client"
 import React from 'react'
+import { LuBrainCog } from "react-icons/lu";
+import { motion } from 'framer-motion';
+import { fadeIn } from '../_utilites/fadeIn';
 
 export default function About() {
     const list=[
@@ -34,9 +38,22 @@ colors:{
     ]
   return (
     <div>
-        <div className='mainContainer  py-5 space-y-4'>
-            <h2 className='text-3xl font-bold text-center '>About Me</h2>
-            <div className=' grid grid-cols-1 md:grid-cols-2 gap-4'>
+        <div  className='mainContainer  py-5 space-y-4'>
+            <motion.h2
+             variants={fadeIn(0.3)}
+  initial="hidden"
+  whileInView="show"           
+  viewport={{ once: true, amount: 0.3 }}
+  exit="exit"
+             className='text-3xl font-bold text-center '>About Me</motion.h2>
+            <motion.div 
+             variants={fadeIn(0.2)}
+  initial="hidden"
+  whileInView="show"          
+  viewport={{ once: true, amount: 0.3 }} 
+  exit="exit"
+            
+            className=' grid grid-cols-1 md:grid-cols-2 gap-4'>
                 {list.map((item,index)=>
                     <div key={index} className='p-4 rounded-xl space-y-2' style={{background: `linear-gradient(180deg, ${item.colors.firstColor}, ${item.colors.secondColor})`}}>
                         <div className='flex gap-2 items-center'><div className='w-3  h-3 transform rotate-45 ' style={{backgroundColor:item.colors.thirdColor}} > </div>
@@ -45,7 +62,7 @@ colors:{
                     </div>
                 )}
 
-            </div>
+            </motion.div>
 
 
         </div>

@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./_Component/Navbar";
 import Footer from "./_Component/Footer";
+import Arrow from "./_Component/Arrow";
+import { AnimatePresence } from "framer-motion";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,12 +22,16 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased relative`}
       >
         <Navbar/>
         {children}
+        <AnimatePresence>
+           <Arrow/>
+        </AnimatePresence>
+        
         <Footer/>
       </body>
     </html>

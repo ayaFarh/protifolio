@@ -34,7 +34,7 @@ export default function HeroSec() {
         <Link href={"contact"} className='btn mt-2 block ' >Contact</Link>
       </div>
        <div   >
-        <Link href={"contact"} className='btn mt-2 block ' >Resume</Link>
+        <a href={"/aya_farh.pdf"}  target="_blank" rel="noopener noreferrer"  className='btn mt-2 block ' >Resume</a>
       </div>
      </div>
      </motion.div>
