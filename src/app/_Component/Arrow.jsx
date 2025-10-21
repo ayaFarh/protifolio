@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
+import { animateScroll as scroll } from "react-scroll"; // <-- هنا
 
 export default function Arrow() {
   const [showArrow, setShowArrow] = useState(false);
@@ -15,9 +16,9 @@ export default function Arrow() {
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
+    scroll.scrollToTop({
+      duration: 500, // مدة التحريك بالميلي ثانية
+      smooth: "easeInOutQuad", // طريقة الحركة
     });
   };
 
@@ -33,10 +34,9 @@ export default function Arrow() {
           onClick={scrollToTop}
           className="shadow-lg hover:shadow-xl fixed bottom-10 right-10 p-3 rounded-full bg-gradient-to-t from-[#300d09] to-[#481709] cursor-pointer hover:scale-110 transition"
         >
-         
           <motion.div
             initial={{ y: -10 }}
-            animate={{ y: [0, -2, 0] }} 
+            animate={{ y: [0, -2, 0] }}
             transition={{ repeat: Infinity, duration: 1, ease: "easeInOut" }}
           >
             <MdOutlineKeyboardArrowUp className="text-2xl" />
@@ -46,5 +46,3 @@ export default function Arrow() {
     </AnimatePresence>
   );
 }
-
-

@@ -128,7 +128,7 @@ export default function Skills() {
 
     ]
   return (
-    <div className='bg-[#05080e] py-5'>
+    <div className='bg-[#05080e] py-5' id='Skills'>
       <div className='w-[70%] mx-auto space-y-4   '>
    <div className='flex flex-col space-y-3 items-center justify-center'>
      <h2 className='text-3xl max-[377px]:text-xl text-center font-bold'>Skills & Expertise</h2>

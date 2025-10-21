@@ -37,21 +37,18 @@ colors:{
         }
     ]
   return (
-    <div>
-        <div  className='mainContainer  py-5 space-y-4'>
-            <motion.h2
-             variants={fadeIn(0.3)}
-  initial="hidden"
-  whileInView="show"           
-  viewport={{ once: true, amount: 0.3 }}
-  exit="exit"
-             className='text-3xl font-bold text-center '>About Me</motion.h2>
-            <motion.div 
-             variants={fadeIn(0.2)}
-  initial="hidden"
-  whileInView="show"          
-  viewport={{ once: true, amount: 0.3 }} 
-  exit="exit"
+    <div id='About'>
+        <motion.div 
+          variants={fadeIn(0.3)}
+          initial="hidden"
+          whileInView="show"           
+          viewport={{ once: true, amount: 0.3 }}
+          exit="exit"
+        
+        className='mainContainer  py-5 space-y-4'>
+            <h2 className='text-3xl font-bold text-center '>About Me</h2>
+            <div 
+             
             
             className=' grid grid-cols-1 md:grid-cols-2 gap-4'>
                 {list.map((item,index)=>
@@ -62,10 +59,10 @@ colors:{
                     </div>
                 )}
 
-            </motion.div>
+            </div>
 
 
-        </div>
+        </motion.div>
 
     </div>
   )

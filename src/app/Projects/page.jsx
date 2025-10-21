@@ -78,7 +78,7 @@ export default function Projects() {
 
     ]
   return (
-    <div className='mainContainer py-5 space-y-3'>
+    <div className='mainContainer py-5 space-y-3' id='Projects'>
         <div className='text-center space-y-3'>
             <h3 className='text-3xl'>Featured Projects</h3>
             <p className='text-newGray'>A comprehensive toolkit for creating data-driven, responsive web applications</p>

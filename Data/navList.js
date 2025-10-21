@@ -5,18 +5,18 @@
         },
         {
             name:"About",
-            link:"/About"
+            link:"About"
         },
         {
             name:"Contact",
-            link:"/Contact"
+            link:"Contact"
         },
         {
             name:"Skills",
-            link:"/Skills"
+            link:"Skills"
         },
         {
             name:"Projects",
-            link:"/Projects"
+            link:"Projects"
         }
     ]
