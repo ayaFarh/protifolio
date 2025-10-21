@@ -44,7 +44,6 @@ export default function Navbar() {
                   to={item.link}
                   smooth={true}
                   duration={500}
-                  offset={-70}
                   spy={true}
                 >
                   {item.name}

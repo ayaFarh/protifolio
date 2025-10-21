@@ -5,6 +5,7 @@ import React from 'react'
 import { socialLinks } from '../../../Data/socialMedia';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../_utilites/fadeIn';
+import { Link as ScrollLink } from "react-scroll";
 
 export default function HeroSec() {
  
@@ -31,7 +32,12 @@ export default function HeroSec() {
       </div>
      <div className='flex items-center justify-center gap-4 max-[300px]:flex-col max-[300px]:gap-2'>
        <div   >
-        <Link href={"contact"} className='btn mt-2 block ' >Contact</Link>
+        <ScrollLink
+        spy={true}
+        smooth={true}
+        duration={500}
+        
+        to={"Contact"} className='btn mt-2 block ' >Contact</ScrollLink>
       </div>
        <div   >
         <a href={"/aya_farh.pdf"}  target="_blank" rel="noopener noreferrer"  className='btn mt-2 block ' >Resume</a>

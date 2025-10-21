@@ -51,7 +51,6 @@ export default function PhoneMenu({setPhoneNav}) {
                   to={item.link}
                   smooth={true}
                   duration={500}
-                  offset={-70}
                   spy={true}
                   onClick={()=> setPhoneNav(false)}
                   
