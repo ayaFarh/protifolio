@@ -63,7 +63,7 @@ export default function Contact() {
 
     ]
   return (
-    <div className='bg-gradient-to-b from-black to-[#0f051a] py-7'>
+    <div className='bg-gradient-to-b from-black to-[#0f051a] py-7 w-full'>
         <div className='mainContainer  space-y-3  '>
            <div className='text-center space-y-3'>
              <h3 className='text-3xl'>Let's Work Together</h3>

@@ -1,5 +1,7 @@
+
+"use client"
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { IoMdClose } from "react-icons/io";
 import { navList } from '../../../Data/navList';
 import { socialLinks } from '../../../Data/socialMedia';
@@ -7,10 +9,21 @@ import {motion} from 'framer-motion'
  
 
 export default function PhoneMenu({setPhoneNav}) {
+    const menuRef = useRef(null);
+    useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setPhoneNav(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [setPhoneNav]);
    
  
   return (
     <motion.div
+    ref={menuRef}
     initial={{x:"100%"}}
     animate={{x:"0%"}}
     exit={{x:"100%"}}

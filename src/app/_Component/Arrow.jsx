@@ -15,11 +15,10 @@ export default function Arrow() {
   }, []);
 
   const scrollToTop = () => {
-    const scrollTarget =
-      document.querySelector("main") ||
-      document.scrollingElement ||
-      document.documentElement;
-    scrollTarget.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   };
 
   return (
