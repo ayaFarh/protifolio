@@ -37,7 +37,7 @@ export default function HeroSec() {
         smooth={true}
         duration={500}
         
-        to={"Contact"} className='btn mt-2 block ' >Contact</ScrollLink>
+        to={"Contact"} className='btn mt-2 block cursor-pointer ' >Contact</ScrollLink>
       </div>
        <div   >
         <a href={"/aya_farh.pdf"}  target="_blank" rel="noopener noreferrer"  className='btn mt-2 block ' >Resume</a>
