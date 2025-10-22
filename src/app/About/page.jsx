@@ -7,6 +7,16 @@ import { fadeIn } from '../_utilites/fadeIn';
 export default function About() {
     const list=[
         {
+            name:"Bringing Ideas to Life",
+            details:"I build responsive, interactive, and user-friendly websites, whether it's a simple landing page, a full web app, or converting Figma/Adobe XD designs into pixel-perfect websites. I’ve built intuitive UI experiences like an interactive Card Details Form and a fully responsive E-Commerce Product Page, taking them from concept to deployment with clean, efficient code.",
+            colors:{
+                firstColor:"#0f0e29",
+            secondColor:"#180929",
+            thirdColor:"#0195af"
+               }
+        }
+
+        ,{
             name:"What sets me apart?",
           details:"What sets me apart is my strong commitment to excellence and continuous learning. I don’t just focus on completing tasks — I focus on creating meaningful, high-quality solutions that truly enhance user experience. My blend of technical expertise, creativity, and attention to detail allows me to turn complex ideas into clean, efficient, and visually appealing results.",
 colors:{

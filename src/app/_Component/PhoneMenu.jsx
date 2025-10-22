@@ -42,10 +42,10 @@ export default function PhoneMenu({setPhoneNav}) {
         <div className='cursor-pointer w-[70%] mx-auto ' onClick={()=>setPhoneNav(false)}>
             <IoMdClose className='text-2xl ml-auto text-white hover:text-primary-foreground transition-all duration-300 ease-in-out' />
         </div>
-         <ul className='fixed top-10 right-0 bottom-0  flex   gap-6  w-64 text-lg text-newGray  items-center justify-center flex-col'>
+         <ul className='fixed top-10 right-0 bottom-0  flex   gap-6  w-64 text-lg text-white  items-center justify-center flex-col'>
         {
             navList.map((item,index)=>
-                    <li key={index} className="after:content-[''] cursor-pointer after:w-0 hover:after:w-full after:h-[2px] after:bg-newGray after:block after:transition-all after:duration-500 ">
+                    <li key={index} className="after:content-[''] cursor-pointer after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:block after:transition-all after:duration-500 ">
                   {pathname === "/" ? (
                 <ScrollLink
                   to={item.link}

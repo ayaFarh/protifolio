@@ -129,14 +129,14 @@ export default function Skills() {
     ]
   return (
     <div className='bg-[#05080e] py-5' id='Skills'>
-      <div className='w-[70%] mx-auto space-y-4   '>
+      <div className='mainContainer mx-auto space-y-4   '>
    <div className='flex flex-col space-y-3 items-center justify-center'>
      <h2 className='text-3xl max-[377px]:text-xl text-center font-bold'>Skills & Expertise</h2>
     <p className='text-newGray max-[377px]:text-sm text-center'>A comprehensive toolkit for creating data-driven, responsive web applications</p>
    </div>
 {/* main content */}
     <div>
-     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full' >
+     <div className='grid max-[570px]:grid-cols-1 grid-cols-2 md:grid-cols-2 [@media(min-width:1024px)_and_(max-width:1139px)]:grid-cols-3 lg:grid-cols-4 gap-4 w-full' >
     {
         listOfSkills.map((item,index)=>
        <div key={index} style={{ backgroundColor:item.colors.secondColor,borderColor:item.colors.firstColor}} className='relative hover:scale-105 transition-all duration-300 p-4 border-2 space-y-2 rounded-xl'>

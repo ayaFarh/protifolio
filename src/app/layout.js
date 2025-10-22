@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Lato, Lora } from "next/font/google";
 import "./globals.css";
 import Navbar from "./_Component/Navbar";
 import Footer from "./_Component/Footer";
@@ -15,6 +15,18 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const lato = Lato({
+  subsets: ["latin"],
+  weight: ["400", "700"], 
+  variable: "--font-lato",
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-lora",
+});
+
 export const metadata = {
   title: "Aya Farh",
   description: "Aya Farh Portfolio",
@@ -22,22 +34,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative `}
-      >
-        <Navbar/>
-        
-      
-      <main className=" min-h-screen">
-          {children}
-        </main>
+    <html
+      lang="en"
+      className={`scroll-smooth ${geistSans.variable} ${geistMono.variable} ${lato.variable} ${lora.variable}`}
+    >
+      <body className="antialiased relative">
+        <Navbar />
+
+        <main className="min-h-screen">{children}</main>
 
         <AnimatePresence>
-           <Arrow/>
+          <Arrow />
         </AnimatePresence>
-        
-        <Footer/>
+
+        <Footer />
       </body>
     </html>
   );

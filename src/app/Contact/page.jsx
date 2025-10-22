@@ -1,13 +1,9 @@
 import React from 'react'
 import { FaWhatsapp } from "react-icons/fa6";
-import { CiLinkedin } from "react-icons/ci";
 import { TbBrandUpwork } from "react-icons/tb";
 import { CiMail } from "react-icons/ci";
 import { MdArrowOutward } from "react-icons/md";
-
-
-
-
+import { FiLinkedin } from "react-icons/fi";
 
 export default function Contact() {
     const contactList=[
@@ -51,7 +47,7 @@ export default function Contact() {
         { 
             name:"Linkedin",
             text:"Connect Professionally",
-            icon:<CiLinkedin />,
+            icon:<FiLinkedin />,
             link:"https://www.linkedin.com/in/aya-mohamed-farh",
             linkText:"Connect",
              colors:{
@@ -75,7 +71,7 @@ export default function Contact() {
         {contactList.map((item,index)=>(
             <div key={index} className='relative p-4 rounded-lg space-y-1 hover:scale-105 transition-all duration-300 ease-in-out' style={{backgroundColor:item.colors.secondColor}} >
                 <div className='absolute top-0 right-0 w-6 h-6 rounded-tr-lg rounded-bl-xl' style={{backgroundColor:item.colors.firstColor}}></div>
-                <div className='p-1 rounded-lg w-fit text-3xl' style={{backgroundColor:item.colors.thirdColor}}>{item.icon}</div>
+                <div className='p-1 rounded-lg w-fit ' style={{backgroundColor:item.colors.thirdColor}}><span className='text-3xl'>{item.icon}</span></div>
                  <h3 className='' style={{color:item.colors.thirdColor}}>{item.name}</h3>
                  <p className='text-newGray'>{item.text}</p>
                  <div>

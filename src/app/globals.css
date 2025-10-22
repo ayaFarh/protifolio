@@ -19,7 +19,7 @@ html{
 body {
   background: black;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-lato), sans-serif;
 }
 
 @theme {
@@ -31,6 +31,8 @@ body {
   --color-accent-foreground:#019b4a;
   --color-success: #2486fe;
   --color-newGray:#8d9094;
+   --color-buttonColor: #d87a38;
+
   
 }
 .mainContainer{
@@ -40,7 +42,7 @@ body {
 
 @layer components {
   .btn {
-    @apply hover:bg-primary text-white py-2 px-6 rounded-lg 
-              w-fit text-center border border-primary-foreground hover:border-primary transition-all duration-300 ease-in-out;
+    @apply hover:bg-buttonColor text-white py-2 px-6 rounded-lg 
+              w-fit text-center border border-buttonColor hover:border-primary transition-all duration-300 ease-in-out;
   }
 }

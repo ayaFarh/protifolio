@@ -33,11 +33,11 @@ export default function Navbar() {
         </div>
 
         {/* Nav Links */}
-        <ul className="hidden gap-6 text-lg text-newGray relative md:flex">
+        <ul className="hidden gap-6 text-lg  relative md:flex">
           {navList.map((item, index) => (
             <li
               key={index}
-              className="cursor-pointer after:content-[''] after:w-0 hover:after:w-full after:h-[2px] after:bg-newGray after:block after:transition-all after:duration-500"
+              className="cursor-pointer after:content-[''] after:w-0 hover:after:w-full after:h-[2px] after:bg-white after:block after:transition-all after:duration-500"
             >
               {pathname === "/" ? (
                 <ScrollLink
