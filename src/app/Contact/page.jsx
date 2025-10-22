@@ -5,12 +5,19 @@ import { CiMail } from "react-icons/ci";
 import { MdArrowOutward } from "react-icons/md";
 import { FiLinkedin } from "react-icons/fi";
 
+
+
+
+
 export default function Contact() {
     const contactList=[
         { 
             name:"Email",
             text:"Let's discuss your project",
-            icon:<CiMail />,
+            icon:<CiMail />
+
+,
+
             link:"mailto:farhaya004@gmail.com",
             linkText:"Send Email",
              colors:{

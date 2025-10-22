@@ -12,8 +12,9 @@ export default function Home() {
    <div className="space-y-4">
    <HeroSec/>
    <About/>
-   <Interested/>
+  
    <Skills/>
+    <Interested/>
    <Projects/>
    <Contact/>
    </div>

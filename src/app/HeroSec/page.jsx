@@ -17,14 +17,14 @@ export default function HeroSec() {
       <p className='text-3xl max-[530px]:text-xl   max-[340px]:text-sm  bg-gradient-to-r to-secondary via-purple-500 from-primary-foreground text-transparent bg-clip-text'>Frontend Developer React Js</p>
       <p className='text-2xl max-[293px]:text-lg'>happy to see you here</p>
       {/* icons */}
-      <div className='flex items-center justify-center gap-2 text-2xl '>
+      <div className='flex items-center justify-center gap-3 text-2xl '>
         {socialLinks.map((link, index) => (
           <Link
             key={index}
             href={link.link}
             target="_blank"
             rel="noopener noreferrer"
-            className='hover:text-primary-foreground transition-all duration-300 ease-in-out'
+            className='hover:text-buttonColor transition-all duration-300 ease-in-out'
           >
             {link.icon}
           </Link>
