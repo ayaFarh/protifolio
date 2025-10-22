@@ -74,7 +74,7 @@ export default function Contact() {
            </div>
     {/* main div */}
 
-    <div className='grid max-[570px]:grid-cols-1 max-[765px]:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full'>
+    <div className='grid max-[570px]:grid-cols-1 max-[765px]:grid-cols-2 md:grid-cols-2  lg:grid-cols-2 xl:grid-cols-4 gap-4 w-full'>
         {contactList.map((item,index)=>(
             <div key={index} className='relative p-4 rounded-lg space-y-1 hover:scale-105 transition-all duration-300 ease-in-out' style={{backgroundColor:item.colors.secondColor}} >
                 <div className='absolute top-0 right-0 w-6 h-6 rounded-tr-lg rounded-bl-xl' style={{backgroundColor:item.colors.firstColor}}></div>
