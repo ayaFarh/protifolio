@@ -10,8 +10,8 @@ import { Link as ScrollLink } from "react-scroll";
 export default function HeroSec() {
  
   return (
-    <div className='bg-black py-4'>
-    <div className='mainContainer flex flex-col gap-2 items-center justify-between md:flex-row'>
+    <div className='bg-black py-4 '>
+    <div className='mainContainer flex flex-col gap-2 items-center justify-between md:flex-row '>
        <motion.div variants={fadeIn(0.3)} initial="hidden" animate="show" exit="exit" className='text-center space-y-1 flex flex-col items-center justify-center'>
        <h1 className='text-3xl max-[280px]:text-2xl font-bold'>Hi, I'm Aya Farh</h1>
       <p className='text-3xl max-[530px]:text-xl max-[1114]:text-2xl max-[1013px]:text-xl text-nowrap   max-[340px]:text-sm  bg-gradient-to-r to-secondary via-purple-500 from-primary-foreground text-transparent bg-clip-text'>Frontend Developer React Js</p>

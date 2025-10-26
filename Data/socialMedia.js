@@ -10,7 +10,7 @@ import { FaGithub, FaTwitter } from 'react-icons/fa';
     },
     {
       icon: <FaTwitter />,
-      link: 'https://twitter.com/YOUR_TWITTER_USERNAME',
+      link: 'https://x.com/aya_farh37050?t=ODwVlZIXSPw1gwK69N-M-g&s=08',
     },
     {
       icon: <FaGithub />,
