@@ -17,8 +17,8 @@ export default function Arrow() {
 
   const scrollToTop = () => {
     scroll.scrollToTop({
-      duration: 500, // مدة التحريك بالميلي ثانية
-      smooth: "easeInOutQuad", // طريقة الحركة
+      duration: 500, 
+      smooth: "easeInOutQuad", 
     });
   };
 
@@ -32,7 +32,7 @@ export default function Arrow() {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3, ease: "easeOut" }}
           onClick={scrollToTop}
-          className="shadow-lg hover:shadow-xl fixed bottom-10 right-10 p-3 rounded-full bg-gradient-to-t from-[#300d09] to-[#481709] cursor-pointer hover:scale-110 transition"
+          className="shadow-lg hover:shadow-xl fixed bottom-14 right-5 p-3 rounded-full bg-gradient-to-t from-[#300d09] to-[#481709] cursor-pointer hover:scale-110 transition"
         >
           <motion.div
             initial={{ y: -10 }}
